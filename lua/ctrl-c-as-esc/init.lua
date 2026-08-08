@@ -1,0 +1,1 @@
+-- Initialise module management for plugin

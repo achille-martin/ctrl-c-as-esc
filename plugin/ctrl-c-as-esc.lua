@@ -1,0 +1,1 @@
+-- Lightweigh module loaded on startup

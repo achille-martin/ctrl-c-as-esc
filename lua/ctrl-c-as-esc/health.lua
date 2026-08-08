@@ -1,0 +1,1 @@
+-- Define health checks for plugin
