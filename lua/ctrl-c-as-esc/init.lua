@@ -12,6 +12,11 @@ function M.setup(opts)
     -- Merge user options with defaults
     opts = opts or {}
 
+    -- Perform basic checks on opts
+    if opts.keymap ~= nil and type(opts.keymap) ~= "string" then
+        error("ctrl-c-as-esc: `keymap` must be a string")
+    end
+
     -- Create command to trigger the function
     vim.api.nvim_create_user_command(
         "PrintHelloWorld",
